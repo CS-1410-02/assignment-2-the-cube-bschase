@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 import javax.lang.model.util.ElementScanner14;
 
+
+// Feedback: 
+//  Everything looks good! You could probably drop that import on line 5 as it may add a little bit of weight to your memory load
+//  but otherwise everything looks good. Your code is reasonably tidy and I would say that I wouldn't have any problem contributing
+//  to it. it could be useful to implement a more strict tabbing practice to increase readabiliyt to avoid situations like on 
+//  line 116-118 or 132-134 where it may be difficult to immediatly understand the layering of the method and could lead to difficulty
+//  when trying to contribute and layer further in those methods.
+
+
 public class Cube {
 
 	public static void main(String[] args){
@@ -97,14 +106,14 @@ public class Cube {
 
     }
   
-  int j = list.size()-1;
+    int j = list.size()-1;
 
-  System.out.println("To get the cube back to its origin make these moves" );
+    System.out.println("To get the cube back to its origin make these moves" );
 
-  while(j >= 0){
-    System.out.println(list.get(j));
-    j--;
-  }
+    while(j >= 0){
+      System.out.println(list.get(j));
+      j--;
+    }
 
   }
 
@@ -122,7 +131,7 @@ public class Cube {
   
     }
       
-    }
+  }
 
   public static String[][] moveU(String[][] array){
       //Get a copy to switch around
